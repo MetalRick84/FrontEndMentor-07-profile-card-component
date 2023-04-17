@@ -2,34 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Profile card component | Frontend Mentor</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { 
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+    }
+    #myname {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main class="card">
+    <section class="person">
+      <img class="person-thumb" src="./images/image-victor.jpg" alt="thumb of person">
+      <section class="person-name">
+        <h1 class="person-name-text">Victor Crest</h1>
+        <p class="person-name-score">26</p>
+      </section>
+      <p class="person-location">London</p>
+    </section>
 
-  803K
-  Likes
+    <section class="stats">
+      <section class="stats-child">
+        <p class="stats-value">80K</p>
+        <p class="stats-text">Followers</p>
+      </section>
+      
+      <section class="stats-child">
+        <p class="stats-value">803K</p>
+        <p class="stats-text">Likes</p>
+      </section>
+      <section class="stats-child">
+        <p class="stats-value">1.4K</p>
+        <p class="stats-text">Photos</p>
+      </section>
+    </section>
+  </main>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a id="myname" href="https://github.com/MetalRick84">MetalRick</a>.
+    </p>
+  </footer>
 </body>
 </html>

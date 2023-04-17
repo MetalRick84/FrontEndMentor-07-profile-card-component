@@ -1,0 +1,137 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --cyan: hsl(185, 75%, 50%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: hsl(0, 0%, 90%);
+}
+
+
+/**************************************************************/
+/*                    ****** RESET ******                     */
+/**************************************************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+/**************************************************************/
+/*                    ****** MAIN ******                    */
+/**************************************************************/
+
+body {
+    height: 100vh;
+    height: 100shv;
+    display: grid;
+    place-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image:
+        url(../images/bg-pattern-bottom.svg), 
+        url(../images/bg-pattern-top.svg),
+        linear-gradient(to bottom,var(--dark-cyan), var(--cyan));
+    background-repeat: 
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        0px 0px,
+        -325px -456px,
+        0 0;
+}
+
+.card {
+    position: relative; /*for positioning the stats-section*/
+    width: 350px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;  
+    background-color: white;
+}
+
+.person {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    height: 287px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.person-thumb {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 58px;
+}
+
+.person-name {
+    display: flex;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.person-name-text {
+    font-weight: 700;
+}
+
+.person-name-score {
+    margin-left: 10px;
+    color: var(--dark-gray);
+    font-weight: 700;
+}
+
+.person-location {
+    margin-top: 0.6em;
+    font-size: 0.9em;
+    color: var(--dark-gray);
+}
+
+.stats {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 86px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 2px solid var(--light-gray);
+}
+
+.stats-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-value {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.stats-text {
+    font-size: 0.7em;
+    margin-top: 3px;
+    letter-spacing: 0.1em;
+    color: var(--dark-gray);
+}
+
+
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+}
