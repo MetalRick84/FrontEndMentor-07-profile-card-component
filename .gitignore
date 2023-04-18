@@ -17,6 +17,7 @@
 .prettierignore
 
 # from MetalRick
+playground/
 design/
 style-guide.md
 README-FrontendMentor.md
