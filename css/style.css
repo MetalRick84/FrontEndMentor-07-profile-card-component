@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+body {
+    height: 100vh;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    height: 52.08%;
+    aspect-ratio: 14/ 15;
+    background-color: lightcoral;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 3px;
+}
