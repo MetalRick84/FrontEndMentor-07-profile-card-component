@@ -4,6 +4,16 @@
     font-size: 100%;
 }
 
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --cyan: hsl(185, 75%, 50%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --dark-gray: hsl(0, 0%, 59%);
+    --light-gray: hsl(0, 0%, 90%);
+}
+
 body {
     height: 100vh;
     height: 100svh;
@@ -16,9 +26,9 @@ body {
 .card {
     width: 350px;
     height: 52.08%;
-    background-color: lightcoral;
     display: grid;
     grid-template-rows: 76% calc(24% - 1px);
+
 }
 
 .person {
@@ -46,6 +56,8 @@ body {
 
 .person-background {
     background-image: url(../images/bg-pattern-card.svg);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
 }
 
 .person-name {
@@ -53,23 +65,52 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    background-color: white;
+}
+
+.person-name-text {
+    margin-bottom: 0.5em;
+}
+
+.person-name-score {
+    margin-left: 0.3em;
+    font-weight: 400;
+    color: var(--dark-gray);
+}
+
+.person-location {
+    font-size: 0.8em;
+    margin-bottom: 1.8em;
+    color: var(--dark-gray);
 }
 
 .stats {
-    border-top: 1px solid black;
+    border-top: 1px solid var(--light-gray);
     display: flex;
     justify-content: space-evenly;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    background-color: white;
 }
 
 .stats-child {
     box-sizing: border-box;
-    border: 1px solid yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.stats-value {
+    font-weight: 700;
+}
+
+.stats-text {
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    margin-top: 0.4em;
+    color: var(--dark-gray);
+}
 
 .attribution {
     position: absolute;
