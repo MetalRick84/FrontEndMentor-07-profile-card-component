@@ -9,13 +9,59 @@ body {
     height: 100svh;
     display: grid;
     place-items: center;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .card {
+    width: 350px;
     height: 52.08%;
-    aspect-ratio: 14/ 15;
     background-color: lightcoral;
+    display: grid;
+    grid-template-rows: 76% calc(24% - 1px);
 }
+
+.person {
+    position: relative; /*for placing the person-thumb*/
+    display: grid;
+    grid-template-rows: 49% 1fr;
+}
+
+.person-thumb {
+    height: 34,39%;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 34.8%;
+}
+
+.person-background {
+    background-image: url(../images/bg-pattern-card.svg);
+}
+
+.person-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.stats {
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats-child {
+    box-sizing: border-box;
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .attribution {
     position: absolute;
