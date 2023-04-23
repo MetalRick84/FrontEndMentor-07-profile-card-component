@@ -27,13 +27,21 @@ body {
     grid-template-rows: 49% 1fr;
 }
 
+.person-thumb-container {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .person-thumb {
     height: 34.39%;
     border: 5px solid white;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     top: 30%;
-    left: 34.8%;
 }
 
 .person-background {
