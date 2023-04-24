@@ -21,6 +21,18 @@ body {
     place-items: center;
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
+    background-image:
+        url(../images/bg-pattern-top.svg),
+        url(../images/bg-pattern-bottom.svg),
+        linear-gradient(to bottom, var(--dark-cyan), var(--cyan));
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        0% 0%,
+        0% 0%,
+        0% 0%;
 }
 
 .card {
